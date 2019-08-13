@@ -12,3 +12,6 @@ rm *.sometmpfileextension
 rm *.othertmpfileextension
 ...
 ```
+Click here to view the [cv.pdf](cv.pdf)
+
+Credits for the original CV layout go to [https://github.com/cies/resume](https://github.com/cies/resume)
