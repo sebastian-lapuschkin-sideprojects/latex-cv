@@ -18,5 +18,7 @@ Credits for the original CV layout go to [https://github.com/cies/resume](https:
 
 Click here to download the [cv.pdf](cv.pdf) or have a look at a preview below.
 
+### Preview
+
 ![preview/cv.jpg](preview/cv.jpg)
 
