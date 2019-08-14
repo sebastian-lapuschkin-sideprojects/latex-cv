@@ -14,7 +14,7 @@ rm *.othertmpfileextension
 ...
 ```
 
-Credits for the original CV layout go to [https://github.com/cies/resume](https://github.com/cies/resume)
+Credit for the original CV layout go to [https://github.com/cies/resume](https://github.com/cies/resume)
 
 Click here to download the [cv.pdf](cv.pdf) or have a look at a (low quality) preview below.
 
