@@ -20,7 +20,7 @@ Click here to download the [cv.pdf](cv.pdf) or have a look at a (low quality) pr
 
 ---
 
-### Preview
+### Preview (JPG)
 
 ![preview/cv.jpg](preview/cv.jpg)
 
