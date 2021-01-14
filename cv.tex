@@ -525,6 +525,8 @@ in various application domains\\
 \roottitle{Publications} % Top level section
 %params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link
 \newcommand{\journalref}[6]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link, 7:note
+\newcommand{\journalrefwnote}[7]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}. \textit{#7}}
 %params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link
 \newcommand{\conferenceref}[6]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}}
 %params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link, 7:note
@@ -540,6 +542,13 @@ in various application domains\\
 {Journal Articles}{ }
 {
 \begin{enumerate}
+
+    \item[] \journalref{Aeles J, Horst F, \textbf{Lapuschkin S}, Lacourpaille L, and Hug F}
+                        {2021}
+                        {Revealing the Unique Features of Each Individual's Muscle Activation Signatures}
+                        {Journal of the Royal Society Interface}
+                        {18(174):20200770}
+                        {https://doi.org/10.1098/rsif.2020.0770}
 
     \item[] \journalref{Horst F, Slijepcevic D,  Zeppelzauer M, Raberger AM, \textbf{Lapuschkin S}, Samek W,  Sch{\"o}llhorn WI, Breiteneder C, and Horsak B}
                         {2020}
@@ -576,12 +585,13 @@ in various application domains\\
                         {9:2391}
                         {https://doi.org/10.1038/s41598-019-38748-8}
 
-    \item[] \journalref{Montavon G, \textbf{Lapuschkin S}, Binder A, Samek W and M\"uller K-R}
-                        {2017}
-                        {Explaining NonLinear Classification Decisions with Deep Taylor Decomposition}
-                        {Pattern Recognition}
-                        {65:211-222}
-                        {https://doi.org/10.1016/j.patcog.2016.11.008}
+    \item[] \journalrefwnote{Montavon G, \textbf{Lapuschkin S}, Binder A, Samek W and M\"uller K-R}
+                            {2017}
+                            {Explaining NonLinear Classification Decisions with Deep Taylor Decomposition}
+                            {Pattern Recognition}
+                            {65:211-222}
+                            {https://doi.org/10.1016/j.patcog.2016.11.008}
+                            {Pattern Recognition Best Paper Award and Pattern Recognition Medal winner}
 
     \item[] \journalref{Samek W, Binder A, Montavon G, \textbf{Lapuschkin S}, and M\"uller K-R}
                         {2017}
@@ -619,7 +629,21 @@ in various application domains\\
 {
     \begin{enumerate}
 
-        \item[] \conferenceref{Kohlbrenner M, Bauer A, Nakajima S, Binder A, Samek W and \textbf{Lapuschkin S}}
+        \item[] \conferenceref{Sun J, \textbf{Lapuschkin S}, Samek W, Zhao Y, Cheung N-M and Binder A}
+                                {2021}
+                                {Explanation-Guided Training for Cross-Domain Few-Shot Classification}
+                                {Proceedings of the 25th International Conference on Pattern Recognition}
+                                {}
+                                {https://arxiv.org/abs/2007.08790}
+
+        \item[] \conferenceref{Goh G S W, \textbf{Lapuschkin S}, Weber L, Samek W and Binder A}
+                                {2021}
+                                {Understanding Integrated Gradients with SmoothTaylor for Deep Neural Network Attribution}
+                                {Proceedings of the 25th International Conference on Pattern Recognition}
+                                {}
+                                {https://arxiv.org/abs/2004.10484}
+
+        \item[] \conferenceref{Kohlbrenner M, Bauer A, Nakajima S, Binder A, Samek W, and \textbf{Lapuschkin S}}
                                 {2020}
                                 {Towards Best Practice in Explaining Neural Network Decisions with LRP}
                                 {Proceedings of the IEEE International Joint Conference on Neural Networks}
@@ -753,24 +777,6 @@ in various application domains\\
 {
     \begin{enumerate}
 
-        \item[] \preprintref{Aeles J, Horst F, \textbf{Lapuschkin S}, Lacourpaille L, and Hug F}
-                            {2020}
-                            {Revealing the unique features of each individual’s muscle activation signatures}
-                            {bioRxiv 2020.07.23.217034}
-                            {https://doi.org/10.1101/2020.07.23.217034}
-
-        \item[] \preprintref{Sun J, \textbf{Lapuschkin S}, Samek W and Binder A}
-                            {2020}
-                            {Explanation-Guided Training for Cross-Domain Few-Shot Classification}
-                            {CoRR abs/2007.08790}
-                            {https://arxiv.org/abs/2007.08790}
-
-        \item[] \preprintref{Goh G S W, \textbf{Lapuschkin S}, Weber L, Samek W and Binder A}
-                            {2020}
-                            {Understanding Integrated Gradients with SmoothTaylor for Deep Neural Network Attribution}
-                            {CoRR abs/2004.10484}
-                            {https://arxiv.org/abs/2004.10484}
-
         \item[] \preprintref{Samek W, Montavon G, \textbf{Lapuschkin S}, Anders C J, and M\"uller K-R}
                             {2020}
                             {Toward Interpretable Machine Learning: Transparent Deep Neural Networks and Beyond}
@@ -783,9 +789,9 @@ in various application domains\\
                             {CoRR abs/2001.01037}
                             {https://arxiv.org/abs/2001.01037}
 
-        \item[] \preprintref{Anders C J, Marin\v{c} T, Neumann D, Samek W, M\"uller K-R and \textbf{Lapuschkin S}}
+        \item[] \preprintref{Anders C J, Weber L, Neumann D, Samek W, M\"uller K-R and \textbf{Lapuschkin S}}
                             {2019}
-                            {Analyzing ImageNet with Spectral Relevance Analysis: Towards ImageNet un-Hans'ed}
+                            {Finding and Removing Clever Hans: Using Explanation Methods to Debug and Improve Deep Models}
                             {CoRR abs/1912.11425}
                             {https://arxiv.org/abs/1912.11425}
 
