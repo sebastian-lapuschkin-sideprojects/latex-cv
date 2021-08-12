@@ -8,7 +8,7 @@ bash build.sh
 
 # above call is equivalent to
 pdflatex cv
-convert -density 200 -append cv.pdf -quality 85 preview/cv.jpg 
+convert -density 200 -append cv.pdf -quality 85 preview/cv.jpg
 rm *.sometmpfileextension
 rm *.othertmpfileextension
 ...
@@ -22,5 +22,5 @@ Click here to download the [cv.pdf](cv.pdf) or have a look at a (low quality) pr
 
 ### Preview (JPG)
 
-![preview/cv.png](preview/cv.png)
+![preview/cv.jpg](preview/cv.jpg)
 
