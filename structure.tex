@@ -41,6 +41,18 @@
 
 \usepackage{graphicx}
 
+% some commands to add a timestamp
+\usepackage{datetime}
+\usepackage{eso-pic}
+
+\settimeformat{hhmmsstime}
+\AddToShipoutPicture{%
+     \AtTextLowerLeft{%
+         \put(290,-45){\it \color{gray} Last updated on \today -- \currenttime}%
+     }%
+}
+
+
 \pagestyle{empty} % Stop page numbering
 
 %----------------------------------------------------------------------------------------
