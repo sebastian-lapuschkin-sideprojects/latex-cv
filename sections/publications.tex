@@ -1,0 +1,20 @@
+\roottitle{Publications} % Top level section
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link
+\newcommand{\journalref}[6]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link, 7:note
+\newcommand{\journalrefwnote}[7]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}. \textit{#7}}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link
+\newcommand{\conferenceref}[6]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link, 7:note
+\newcommand{\conferencerefwnote}[7]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}. \textit{#7} }
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:pages, 6:link, 7:publisher
+\newcommand{\bookchapterref}[7]{#1 (#2).\\``#3''.\\In: \href{#6}{\textit{#4} #5}. #7}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:link
+\newcommand{\preprintref}[5]{#1 (#2).\\``#3''.\\In: \href{#5}{\textit{#4}}}
+%params: 1:authors, 2:year, 3:title, 4:publishedin, 5:link, 6:note
+\newcommand{\preprintrefwnote}[6]{#1 (#2).\\``#3''.\\In: \href{#5}{\textit{#4}}. \textit{#6}}
+
+\input{sections/publications-journal}
+\input{sections/publications-proceedings}
+\input{sections/publications-book}
+\input{sections/publications-preprint}
