@@ -1,48 +1,77 @@
 \roottitle{Student Supervision \& Guidance} % Top level section
 
+%params: 1:name, 2:time, 3:topics
+\newcommand{\supervision}[3]{\textbf{#1} (In own group, #2). {\small #3}}
+%params: 1:name, 2:institution, 3:time, 4:topics
+\newcommand{\cosupervision}[4]{\textbf{#1} (#2, #3, co-supervision). {\small #4}}
+
 \headedsection 
 {PhD Students}
 {
     \begin{itemize}
         %sort by "open" up top, by "since" date, "done" below.
-        \item [] PhD Student (Seegerer (co-supervision, done))
-        \item [] PhD Student (Hägele (co-supervision, done))
-        \item [] PhD Student (Hedström (co-supervision))
-        \item [] PhD Student (Ede, bis 2022)
-        \item [] PhD Student (Weber)
-        \item [] PhD Student (Pahde)
-        \item [] PhD Student (Nobis)
-        \item [] PhD Student (Vielhaben)
-        \item [] PhD Student (Dreyer)
-        \item [] PhD Student (Achtibat)
-        \item [] PhD Student (Simon Hofmann, co-supervision)
-        \item [] PhD Student (Adrian Hill, co-supervision)
-        \item [] PhD Student (Daniel Krakowczyk, co-supervision)
+        \item [] \supervision{G Nobis}{2022-*}{XAI in GANs \& XAI for Anomaly Detection}
+        \item [] \supervision{R Achtibat}{2022-*}{Methods for Global-Local Concept-based Explanations}
+        \item [] \supervision{M Dreyer}{2022-*}{GLocal XAI for Localization Models and Outlier Detection}
+        
+        \item [] \cosupervision{D Krakowczyk}{Universität Potsdam}{2022-*}{XAI Quantification (Biomedical Domain)}
+        \item [] \cosupervision{A Hill}{TU Berlin}{2021-*}{Open Source Software Frameworks for XAI}
+        \item [] \cosupervision{A Hedström}{Universität Potsdam}{2021-*}{Quantification and Evaluation of XAI}
+
+        \item [] \supervision{F Pahde}{2021-*}{XAI as Part of the AI Life Cycle}
+        \item [] \supervision{J Vielhaben}{2020-*}{Global XAI \& Explaining with Concepts}
+        \item [] \supervision{L Weber}{2020-*}{XAI for ML Model Improvement}  
+        
+        \item [] \cosupervision{S M Hofmann}{MPI for CBS}{2018-*}{XAI for Brain Age Prediction}
+        
+        \item [] \cosupervision{S Ede}{TU Berlin}{2021-2022}{XAI against Catastrophic Forgetting}
+        \item [] \cosupervision{P Seegerer}{TU Berlin}{2017-2021}{XAI for Histopathology \& Neural Network Pruning}
+        \item [] \cosupervision{M Hägele}{TU Berlin}{2017-2021}{XAI in Histopathology}
+        \item [] \cosupervision{V Srinivasan}{Berlin Big Data Center/own group}{2017}{Compressed Domain XAI}
+                
+        
+        
     \end{itemize}
 }
 
 \headedsection 
-{Postgraduate Students}
+{Master's Students}
 {
     \begin{itemize}
-        \item [] PhD Student (Seegerer (co-supervision, done))
+        \item [] \supervision{J Berend}{2022-*}{XAI Demonstrators \& XAI-based Neural Network Training}
+        \item [] \supervision{N Ayday}{2022-*}{Kernelized Class Artifact Compensation}
+        \item [] \supervision{S Gururaj}{2022-*}{XAI for Point Cloud Recognition Models}
+        \item [] \supervision{A Jain}{2022-*}{XAI Language Transformers}
+        \item [] \supervision{S M V Hatefi}{2022-*}{XAI for Adversarial Attack and Outlier Detection}
+        \item [] \supervision{G Ü Yolcu}{2022-*}{Neural Network Canonization \& Local XAI via Kernelized Influence Functions}
+        \item [] \supervision{Hufe L}{2022-*}{XAI-based Neural Network Training for Active Learning}
+        \item [] \supervision{A Frommholz}{2020-2021, 2022-*}{XAI in the Audio Domain}
+        \item [] \supervision{E Dolgener-Cantú}{2020-*}{AI Simulations for Anomaly Detecion in Photonic Wafers}
+        \item [] \supervision{I Eisenbraun}{2020-*}{Tools for Interactive GLocal XAI}
+        
+        \item [] \supervision{R Achtibat}{2020-2022}{Human-understandable Explanations [...]}
+        \item [] \supervision{M Dreyer}{2020-2022}{Concept-based XAI for Semantic Segmentation [...]}
+        \item [] \supervision{S Baghdadlian}{2021}{XAI against Catastrophic Forgetting}
+        \item [] \supervision{F W Motzkus}{2020-2021}{XAI Quantification for Measurably Better Explanations}
+        \item [] \supervision{L Weber}{2019-2020}{XAI for Refined  Neural Network Training}
+        
     \end{itemize}
 }
 
 \headedsection 
-{Undergraduate Students}
+{Bachelor's Students}
 {
     \begin{itemize}
-        \item [] Bachelor's Student (Kohlbrenner (co-supervision, done))
+        \item [] \supervision{M Kohlbrenner}{2017-2020}{Composite Rule Sets for Layer-wise Relevance Propagation}
     \end{itemize}
 }
 
 \headedsection 
-{Research Guests}
+{Guest Researchers}
 {
     \begin{itemize}
-        \item [] PhD Student (Pablo (co-supervision, done))
-        \item [] PhD Student (Adrian (co-supervision, done))
+        \item [] \cosupervision{P M Miguélez}{Universidad Carlos III de Madrid}{2022-*}{Evaluating Local XAI against Global Explanations from Polynomial Representations of Neural Network Models}
+        \item [] \cosupervision{A Wolny}{Universität Heidelberg | EMBL}{2021-*}{Understanding Neural Network Self-Hallucinations in Cell Segmentation with Tools from XAI}        
     \end{itemize}
 }
 
