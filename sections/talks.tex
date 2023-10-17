@@ -4,5 +4,16 @@
 %params: 1:authors, 2:date, 3:title, 4:locationorevent, 5:note
 \newcommand{\talkrefwnote}[5]{``#3'' (#2).\\\textit{#4, (#5)}}
 
-\input{sections/talks-talk}
-\input{sections/talks-lecture}
+\ifdefined\shortcv
+    {
+        \hspace*{\fill} Over 30 invited talks and individual lectures since held 2017.\\
+        \hspace*{\fill} Excludes teaching activities and internal/confidential events.
+    }
+\else
+    {
+        \input{sections/talks-talk}
+        \input{sections/talks-lecture}
+    }
+\fi
+
+

@@ -1,55 +1,59 @@
 \roottitle{Teaching} % Top level section
 
 % #1: semester , #2: title, #3: duties  (second command \coursep ("course plus") silences the semester output, uses phanthom)
-\newcommand{\course}[3]{\textbf{#1} #2.\\ \phantom{#1}~~~~{\small [#3.]}}
-\newcommand{\coursep}[3]{\newline\phantom{\textbf{#1}} #2.\\ \phantom{#1}~~~~{\small [#3.]}}
+\newcommand{\course}[3]{\textbf{#1} #2.\\ \hspace*{\fill}{\small [#3.]}}
+\newcommand{\coursep}[3]{\newline\phantom{\textbf{#1}} #2.\\\hspace*{\fill}{\small [#3.]}}
 %\newcommand{\course}[3]{#2.\\ \phantom{#1}~~~~{\small [#3.]}}
 %\newcommand{\coursep}[3]{\newline #2.\\ \phantom{#1}~~~~{\small [#3.]}}
 
+\ifdefined\shortcv
+    {\hspace*{\fill} Teaching and teaching support of 11 university courses since 2010}
+\else
+    {
+        \begin{itemize}
+        % individual /invited lectures
 
-\begin{itemize}
-    % individual /invited lectures
+        \item [] \textit{See section "Talks \& Lectures / Invited Lectures" below for a list of additional invited and individual lectures held.}
 
-    \item [] \textit{See section "Talks \& Lectures / Invited Lectures" below for a list of additional invited and individual lectures held.}
+        % grad level teaching
 
-    % grad level teaching
+        \item [] \course{WS 21/22}{Machine Learning Seminar (block seminar)}{Guest Lecturer @ Universitat de Girona. Three lectures on Explainable AI w/ Exercise Sessions}
 
-    \item [] \course{WS 21/22}{Machine Learning Seminar (block seminar)}{Guest Lecturer @ Universitat de Girona. Three lectures on Explainable AI w/ Exercise Sessions}
+        \vstep
 
-    \vstep
+        \item [] \course{SS 17\phantom{/XX}}{Seminar Cognitive Algorithms (block seminar)}{1:1 Student Guidance and Co-Supervision, Grading}
 
-    \item [] \course{SS 17\phantom{/XX}}{Seminar Cognitive Algorithms (block seminar)}{1:1 Student Guidance and Co-Supervision, Grading}
+        \vstep
 
-    \vstep
+        \item[] \course{WS 13/14}{Python Programming for Machine Learning (block seminar)}{Co-Teaching, Grading, Exercise Design}
+                \coursep{WS 13/14}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
 
-    \item[] \course{WS 13/14}{Python Programming for Machine Learning (block seminar)}{Co-Teaching, Grading, Exercise Design}
-            \coursep{WS 13/14}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
+        \item[] \course{SS13\phantom{/XX}}{Integrated Lecture Machine Learning II}{Teaching (Exercise sessions), Grading, Exercise Design}
+                \coursep{SS13\phantom{/XX}}{Python Programming for Machine Learning (block seminar)}{Co-Teaching, Grading, Exercise Design}
 
-    \item[] \course{SS13\phantom{/XX}}{Integrated Lecture Machine Learning II}{Teaching (Exercise sessions), Grading, Exercise Design}
-            \coursep{SS13\phantom{/XX}}{Python Programming for Machine Learning (block seminar)}{Co-Teaching, Grading, Exercise Design}
+        \item[] \course{WS 12/13}{Integrated Lecture Machine Learning I}{Teaching (Exercise sessions), Grading, Exercise Design}
+                \coursep{WS 12/13}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
 
-    \item[] \course{WS 12/13}{Integrated Lecture Machine Learning I}{Teaching (Exercise sessions), Grading, Exercise Design}
-            \coursep{WS 12/13}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
+        \item[] \course{SS12\phantom{/XX}}{Machine Learning II -- Theory and Application}{Teaching (Exercise sessions), Grading, Exercise Design}
+                \coursep{SS12\phantom{/XX}}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
 
-    \item[] \course{SS12\phantom{/XX}}{Machine Learning II -- Theory and Application}{Teaching (Exercise sessions), Grading, Exercise Design}
-            \coursep{SS12\phantom{/XX}}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
+        \item[] \course{WS 11/12}{Machine Learning I}{Teaching (Exercise sessions), Grading, Exercise Design}
+                \coursep{WS 11/12}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
+        
+        \vstep
 
-    \item[] \course{WS 11/12}{Machine Learning I}{Teaching (Exercise sessions), Grading, Exercise Design}
-            \coursep{WS 11/12}{Matlab Programming for Machine Learning and Data Analysis (block beminar)}{Co-Teaching, Grading, Exercise Design}
-     
-    \vstep
+        % undergrad teaching
+        \item[] \course{SS 11\phantom{/XX}}{Methodisch-praktische Grundlagen der Informatik 2 ("Algorithms and Data Structures")}{Teaching (Exercise sessions), Grading, Exercise Design}
 
-    % undergrad teaching
-    \item[] \course{SS 11\phantom{/XX}}{Methodisch-praktische Grundlagen der Informatik 2 ("Algorithms and Data Structures")}{Teaching (Exercise sessions), Grading, Exercise Design}
+        \item[] \course{WS 10/11}{Methodisch-praktische Grundlagen der Informatik 4 ("Advanced Algorithms")}{Teaching (Exercise sessions), Grading, Exercise Design}
+        
+        \item[] \course{SS 10\phantom{/XX}}{Methodisch-praktische Grundlagen der Informatik 2 ("Algorithms and Data Structures")}{Teaching (Exercise sessions), Grading, Exercise Design}
 
-    \item[] \course{WS 10/11}{Methodisch-praktische Grundlagen der Informatik 4 ("Advanced Algorithms")}{Teaching (Exercise sessions), Grading, Exercise Design}
-    
-    \item[] \course{SS 10\phantom{/XX}}{Methodisch-praktische Grundlagen der Informatik 2 ("Algorithms and Data Structures")}{Teaching (Exercise sessions), Grading, Exercise Design}
+        \item[] \course{WS 09/10}{Methodisch-praktische Grundlagen der Informatik 4 ("Advanced Algorithms")}{Teaching (Exercise sessions), Grading, Exercise Design}
 
-    \item[] \course{WS 09/10}{Methodisch-praktische Grundlagen der Informatik 4 ("Advanced Algorithms")}{Teaching (Exercise sessions), Grading, Exercise Design}
-
-\end{itemize}
-
+        \end{itemize}
+    }
+\fi
 
     
 
