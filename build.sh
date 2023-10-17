@@ -8,6 +8,9 @@ pdflatex cv &> /dev/null
 echo "building cv-short.pdf"
 pdflatex -jobname cv-short "\def\shortcv{1} \input{cv.tex}"  &> /dev/null
 
+
+
+# generates png previews of long and short CV
 echo "generating png preview from cv.pdf"
 convert -density 200 -append cv.pdf -quality 85 -alpha remove -alpha off preview/cv.png   &> /dev/null
 
@@ -16,9 +19,7 @@ convert -density 200 -append cv-short.pdf -quality 85 -alpha remove -alpha off p
 
 
 
-
-
-echo "generated file sizes"
+echo "file sizes"
 du -sh cv*.pdf
 du -sh preview/cv*.png
 
