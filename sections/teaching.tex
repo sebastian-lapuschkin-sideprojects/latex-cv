@@ -7,9 +7,9 @@
 %\newcommand{\coursep}[3]{\newline #2.\\ \phantom{#1}~~~~{\small [#3.]}}
 
 \ifdefined\shortcv
-    {\hspace*{\fill} Teaching of and teaching support for 18 university courses since 2009}
-\else
-    {
+    {\hspace*{\fill} Teaching of and teaching support for 18 university courses since 2009
+    
+    } \else  { % comment this switch to higlight teaching in the short cv
         \begin{itemize}
         % individual /invited lectures
 
@@ -59,7 +59,8 @@
         \item[] \course{WS 09/10}{Methodisch-praktische Grundlagen der Informatik 4 ("Advanced Algorithms")}{Technische Universität Berlin}{Teaching (Exercise sessions), Grading, Exercise Design}
 
         \end{itemize}
-    }
+
+      %  } \else { } % uncomment this switch to highlight some teaching in detail.
 \fi
 
     
