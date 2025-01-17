@@ -51,8 +51,8 @@
 \settimeformat{hhmmsstime}
 \AddToShipoutPicture{%
      \AtTextLowerLeft{%
-         \put(0, -45){\ifdefined\shortcv{\it \color{gray} Download full CV \href{https://raw.githubusercontent.com/sebastian-lapuschkin-sideprojects/latex-cv/master/cv.pdf}{here}.}\else{}\fi}
-         \put(273,-45){\it \color{gray} Last updated on \today\ -- \currenttime}%
+         \put(0, -45){\ifdefined\shortcv{\normalsize \it \color{gray} Download full CV \href{https://raw.githubusercontent.com/sebastian-lapuschkin-sideprojects/latex-cv/master/cv.pdf}{[here]}.}\else{}\fi}
+         \put(273,-45){\normalsize \it \color{gray} Last updated on \today\ -- \currenttime}%
      }%
 }
 
@@ -66,15 +66,34 @@
 \newenvironment{indentsection} % Defines the indentsection environment which indents text in sections titles
 {\begin{list}{}{\setlength{\leftmargin}{\newparindent}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}}}{\end{list}}
 
+\newenvironment{unindentsection} % Defines the uindentsection environment which indents text in sections titles
+{\begin{list}{}{\setlength{\leftmargin}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}}}{\end{list}}
+
+
 \newcommand*\maintitle[2]{\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}\vspace{0.3em}} % Main title (name) with date of birth or subtitle
 
 \newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.3em}\nopagebreak[4]} % Top level sections in the template
 
-\newcommand{\headedsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textscale{1.1}{#1}\hfill#2#3\end{indentsection}\nopagebreak[4]} % Section title used for a new employer
+\newcommand{\headedsection}[3]{
+\nopagebreak[4]
+\begin{unindentsection}
+\item[]
+\textscale{1.1}
+{#1}
+\hfill#2#3
+\end{unindentsection}
+\nopagebreak[4]
+} % Section title used for a new employer
 
 \newcommand{\headedsubsection}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textbf{#1}\hfill\emph{#2}#3\end{indentsection}\nopagebreak[4]} % Section title used for a new position
 
-\newcommand{\bodytext}[1]{\nopagebreak[4]\begin{indentsection}\item[]#1\end{indentsection}\pagebreak[2]} % Body text (indented)
+\newcommand{\bodytext}[1]{
+\nopagebreak[4]
+\begin{unindentsection}
+\item[]
+#1
+\end{unindentsection}
+\pagebreak[2]} % Body text (indented)
 
 \newcommand{\inlineheadsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.7em}} % Section title where body text starts immediately after the title
 

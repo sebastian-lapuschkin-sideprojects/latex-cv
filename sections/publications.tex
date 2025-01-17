@@ -20,13 +20,29 @@
 
 
 \input{sections/publications-impact}
+
 \ifdefined\shortcv
-    {}
-\else
-   {
-    \input{sections/publications-journal}
-    \input{sections/publications-proceedings}
-    \input{sections/publications-book}
-    \input{sections/publications-preprint}
-   }
-\fi
+     {
+     % only show selected publication in short cv
+     \input{sections/publications-selected}}
+ \else
+    {
+    \ifdefined\publicationsextra
+    {   % "helper" mode for full cv: extra publications list
+        \newpage
+        \center{\roottitle{List of Publications}}
+            \vspace{5mm}
+            \input{sections/publications-journal}
+            \input{sections/publications-proceedings}
+            \input{sections/publications-book}
+            \input{sections/publications-preprint}
+    }\else{
+           % "normal" mode for full cv: publilcations listed as part of CV
+        \headedsection{List of Publications}{}{
+            \input{sections/publications-journal}
+            \input{sections/publications-proceedings}
+            \input{sections/publications-book}
+            \input{sections/publications-preprint}
+        }
+    }\fi
+ \fi
