@@ -1,41 +1,110 @@
 \headedsection{Selected Publications}{}{}
+    \headedsubsection{Theoretical \& Methodological Contributions to XAI}{}{}
         \begin{enumerate}
+            \item \conferencerefwnote{Achtibat, Hatefi, Dreyer, Jain, Wiegand, \textbf{Lapuschkin}, Samek}
+                        {2024}
+                        {AttnLRP: Attention-Aware Layer-wise Relevance Propagation for Transformers}
+                        {Proceedings of the 41st International Conference on Machine Learning (ICML)}
+                        {135--168}
+                        {https://proceedings.mlr.press/v235/achtibat24a.html}
+                        {
+                            \\
+                            In this paper we adapt the popular LRP method to contemporary Transformer architectures, yielding state-of-the-art explanation quality at exceptional computational efficiency.
+                            This acievement enables the analysis of the reasoning processes of Vision Transformers and LLMs in real time, eg.\ in chat bot applications.
+                        }
+                        
             \item
-            \journalrefwnote{Achtibat R, Dreyer M, Eisenbraun I, Bosse S, Wiegand T, Samek W and \textbf{Lapuschkin S}}
+            \journalrefwnote{Achtibat, Dreyer, Eisenbraun, Bosse, Wiegand, Samek and \textbf{Lapuschkin}}
                             {2023}
                             {From attribution maps to human-understandable explanations through Concept Relevance Propagation}
                             {Nature Machine Intelligence}
                             {5(9):1006--1019}
                             {https://doi.org/10.1038/s42256-023-00711-8}
                             {   \\
-                                \href{https://github.com/rachtibat/zennit-crp}{https://github.com/rachtibat/zennit-crp} |
-                                \href{https://github.com/maxdreyer/crp-human-study}{https://github.com/maxdreyer/crp-human-study}\\
-                                A paper introducing the second generation of Explainable Artificial Intelligence with concept-based explanations.
+                                A paper introducing the second generation of Explainable Artificial Intelligence with human-readable and abstract concept-based explanations.
                             }
-
-
-%             \item
-%             \journalrefwnote{Anders C J, Weber L, Neumann D, Samek W, M\"uller K-R and \textbf{Lapuschkin S}}
-%                             {2022}
-%                             {Finding and Removing Clever Hans: Using Explanation Methods to Debug and Improve Deep Models}
-%                             {Information Fusion}
-%                             {77:261--295}
-%                             {https://www.sciencedirect.com/science/article/pii/S1566253521001573}
-%                             {\\
-%                             The authors' first work in a series dedicated to the exploitation of knowledge derived from XAI to the improvement of performance and robustness of AI systems.}
-
-            \item \conferencerefwnote{Pahde F, Dreyer M, Samek W and \textbf{Lapuschkin S}}
+        
+            \item \conferencerefwnote{Pahde, Dreyer, Samek and \textbf{Lapuschkin}}
                             {2023}
                             {Reveal to Revise: An Explainable AI Life Cycle for Iterative Bias Correction of Deep Models}
                             {Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention}
                             {596--606}
                             {https://doi.org/10.1007/978-3-031-43895-0_56}
-                            {(\href{https://arxiv.org/abs/2303.12641}{Green Open Access})\\ \href{https://github.com/maxdreyer/reveal2revise}{https://github.com/maxdreyer/reveal2revise}\\
+                            {\\
                             This paper is dedicated to the incorporation of XAI as a standard component into the life cycle of Artificial Intelligence systems, with the intent to improve performance, reliability, and safety of AI.}
-
+                            
+            
+            \item \journalrefwnote{Hedström, Weber, Krakowczyk, Bareeva, Motzkus, Samek, \textbf{Lapuschkin} and Höhne}
+                        {2023}
+                        {Quantus: An Explainable AI Toolkit for Responsible Evaluation of Neural Network Explanations and Beyond}
+                        {Journal of Machine Learning Research}
+                        {24(34):1--11}
+                        {https://jmlr.org/papers/v24/22-0142.html}
+                        {\\
+                        In this paper we present the Quantus toolkit, the first-ever comprehensive XAI evaluation toolkit, constituting a well-organized collection of metrics and tutorials for evaluating explainable models, driven by community contributions.
+                        }
+                            
+                            
+            \item
+            \journalrefwnote{Montavon, \textbf{Lapuschkin}, Binder, Samek and M\"uller}
+                                {2017}
+                                {Explaining NonLinear Classification Decisions with Deep Taylor Decomposition}
+                                {Pattern Recognition}
+                                {65:211--222}
+                                {https://doi.org/10.1016/j.patcog.2016.11.008}
+                                {\\A paper discussing the mathematical foundation of LRP and its properties. Pattern Recognition Best Paper Award and Pattern Recognition Medal winner of 2020.}
 
             \item
-            \journalrefwnote{\textbf{Lapuschkin S}, W\"aldchen S, Binder A, Montavon G, Samek W and M\"uller K-R}
+            \journalrefwnote{\textbf{Bach}, Binder, Montavon, Klauschen, M\"uller and Samek}
+                            {2015}
+                            {On Pixel-wise Explanations for Non-Linear Classifier Decisions by Layer-wise Relevance Propagation}
+                            {PLoS ONE}
+                            {10(7):e0130140}
+                            {https://doi.org/10.1371/journal.pone.0130140}
+                            {\\A very influential and early work on local XAI, introducing the widely used Layer-wise Relevance Propagation method. This work has so far received over 5400 citations as counted by Google Scholar.}
+        
+        \end{enumerate}
+    
+    \headedsubsection{Applications of XAI}{}{}
+    
+        \begin{enumerate}[resume]
+
+        
+            \item
+            \journalrefwnote{Anders, Weber, Neumann, Samek, M\"uller and \textbf{Lapuschkin}}
+                            {2022}
+                            {Finding and Removing Clever Hans: Using Explanation Methods to Debug and Improve Deep Models}
+                            {Information Fusion}
+                            {77:261--295}
+                            {https://www.sciencedirect.com/science/article/pii/S1566253521001573}
+                            {\\
+                            The authors' first work in a series dedicated to the exploitation of knowledge derived from XAI for the improvement of performance and robustness of AI systems.}
+
+            
+            \item \journalrefwnote{Yeom, Seegerer, \textbf{Lapuschkin}, Binder, Wiedemann, M\"uller and Samek }
+                        {2021}
+                        {Pruning by Explaining: A Novel Criterion for Deep Neural Network Pruning}
+                        {Pattern Recognition}
+                        {115:107899}
+                        {https://doi.org/10.1016/j.patcog.2021.107899}
+                        {\\
+                        In this paper we leverage information about the importance of latent neural network structures obtained through XAI, in order to drastically reduce over-parameterization by identifying and removing non-critical components, resulting in up to 95\% smaller models without loss of performance, and thus strong gains in energy and run time efficiency.
+                        %while simultaneously enabling training-free domain adaptation capabilities. Our results demonstrate that with our robust and efficient approach, we can remove up to 95\% of neurons from Deep Neural Networks without loss of performance, considerably increasing run time and energy efficiency during deployment.
+                        }
+                        
+                        
+            \item \journalrefwnote{Horst, \textbf{Lapuschkin}, Samek, M\"uller and Sch\"ollhorn}
+                        {2019}
+                        {Explaining the Unique Nature of Individual Gait Patterns with Deep Learning}
+                        {Scientific Reports}
+                        {9:2391}
+                        {https://doi.org/10.1038/s41598-019-38748-8}
+                        {\\
+                        This paper is representative of many, in which we leverage techniques from XAI in domains where model transparency is critical, enabling for the first time the application of more powerful non-linear predictors beyond traditional linear systems in a feasible manner.}
+                            
+                            
+            \item
+            \journalrefwnote{\textbf{Lapuschkin}, W\"aldchen, Binder, Montavon, Samek and M\"uller}
                             {2019}
                             {Unmasking Clever Hans Predictors and Assessing what Machines Really Learn}
                             {Nature Communications}
@@ -46,24 +115,17 @@
                             %rigorously showcasing the spectrum of problem-solving abilities of AI methods, ranging from short-sighted to well-informed. With the Introduction of Spectral Relevance Analysis, we are the first to
                             perform model- and data analysis through the lens of XAI, adding a voice of caution to the ongoing excitement about machine intelligence.}
 
+            \item \conferencerefwnote{\textbf{Lapuschkin}, Binder, Montavon, M\"uller and Samek}
+                            {2016}
+                            {Analyzing Classifiers: Fisher Vectors and Deep Neural Networks}
+                            {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+                            {2016:2912-2920}
+                            {https://doi.org/10.1109/CVPR.2016.318}
+                            {\\
+                            This is the first paper to use XAI to analyze and document differences in the behavior of state of the art predictors from several epochs of AI, in turn
+                            illuminating their use of yet unknown confounding features embedded in widely used computer vision benchmark datasets, critically scrutinizing previous key results from AI research.
+                            }
 
-            \item
-            \journalrefwnote{Montavon G, \textbf{Lapuschkin S}, Binder A, Samek W and M\"uller K-R}
-                                {2017}
-                                {Explaining NonLinear Classification Decisions with Deep Taylor Decomposition}
-                                {Pattern Recognition}
-                                {65:211--222}
-                                {https://doi.org/10.1016/j.patcog.2016.11.008}
-                                {\\A paper discussing the mathematical foundation of LRP and its properties. Pattern Recognition Best Paper Award and Pattern Recognition Medal winner of 2020.}
-
-            \item
-            \journalrefwnote{\textbf{Bach S}, Binder A, Montavon G, Klauschen F, M\"uller K-R and Samek W}
-                            {2015}
-                            {On Pixel-wise Explanations for Non-Linear Classifier Decisions by Layer-wise Relevance Propagation}
-                            {PLoS ONE}
-                            {10(7):e0130140}
-                            {https://doi.org/10.1371/journal.pone.0130140}
-                            {\\A very influential and early work on local XAI, introducing the widely used Layer-wise Relevance Propagation method. This work has received over 5300 citations as counted by Google Scholar.}
-
+         
         \end{enumerate}
     }
