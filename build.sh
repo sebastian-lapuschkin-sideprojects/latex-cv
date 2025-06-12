@@ -27,7 +27,7 @@ convert -density 200 -append publications.pdf -quality 85 -alpha remove -alpha o
 
 echo "file sizes"
 du -sh *.pdf
-du -sh preview/cv*.png
+du -sh preview/*.png
 
 echo "removing temporary files"
 #removes left-over temporary build files
