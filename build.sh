@@ -1,5 +1,6 @@
 #!/bin/bash
 
+time {
 #creates list of publications as standalone file
 echo "building publications list"
 pdflatex -jobname cv "\def\publicationsextra{1} \input{cv.tex}" &> /dev/null
@@ -32,3 +33,5 @@ du -sh preview/*.png
 echo "removing temporary files"
 #removes left-over temporary build files
 bash clean.sh &> /dev/null
+
+} # end of time keeping
