@@ -27,6 +27,11 @@
 
 \begin{document}
 
+% For the standalone publications.pdf build, \publicationsextra is defined:
+% skip the header and every non-publication section, emitting ONLY the
+% publications section. Otherwise (full cv / cv-short) render everything.
+\ifdefined\publicationsextra\else
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -143,6 +148,8 @@ http://www.hhi.fraunhofer.de
 %--------------------------- -------------------------------------------------------------
 \input{sections/patents}
 \spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+\fi % end \publicationsextra-else (front matter is omitted in the publications-only build)
 
 
 %----------------------------------------------------------------------------------------

@@ -1,10 +1,9 @@
 #!/bin/bash
 
 time {
-#creates list of publications as standalone file
+#creates list of publications as standalone file (publications section only, via \publicationsextra flag)
 echo "building publications list"
-pdflatex -jobname cv "\def\publicationsextra{1} \input{cv.tex}" &> /dev/null
-pdftk cv.pdf cat 7-end output publications.pdf
+pdflatex -jobname publications "\def\publicationsextra{1} \input{cv.tex}" &> /dev/null
 
 #creates cv.pdf
 echo "building cv.pdf proper"
